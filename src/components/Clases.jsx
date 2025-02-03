@@ -13,7 +13,7 @@ function Clases() {
     const [classDate, setClassDate] = useState('');
 
     useEffect(() => {
-        const targetDate = new Date('2024-02-05T00:00:00'); 
+        const targetDate = new Date('2025-02-05T00:00:00'); 
 
         setClassDate(format(targetDate, 'dd MMMM yyyy'));
 
