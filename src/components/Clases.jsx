@@ -1,0 +1,61 @@
+import './Clases.css';
+import ReactClass from '../assets/react-course.png';
+import KaliClass from '../assets/kali-course.png';
+import PythonClass from '../assets/python-course.png';
+import CsharpClass from '../assets/csharp-course.png';
+import JavaClass from '../assets/java-course.png';
+import Block from '../assets/block.png';
+import { useState, useEffect } from 'react';
+import { formatDistanceToNow, format } from 'date-fns';
+
+function Clases() {
+    const [timeLeft, setTimeLeft] = useState('');
+    const [classDate, setClassDate] = useState('');
+
+    useEffect(() => {
+        const targetDate = new Date('2024-02-05T00:00:00'); 
+
+        setClassDate(format(targetDate, 'dd MMMM yyyy'));
+
+        const interval = setInterval(() => {
+            setTimeLeft(formatDistanceToNow(targetDate, { addSuffix: true }));
+        }, 1000);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    return (
+        <div>
+            <h1 className='title-news'>Anuncio de próximas clases</h1>
+            <section className="clases">
+                <div className="class">
+                    <div className="react-class-container">
+                        <img src={ ReactClass } alt="react-class" className='class-new' />
+                        <div className="react-class-countdown">
+                            <p><strong>Primera clase de React:</strong></p>
+                            <p>El {classDate}</p> 
+                        </div>
+                    </div>
+                    <div className="lock-wrapper">
+                        <img src={ KaliClass } alt="kali-class" className='class-new kali-i' />
+                        <img src={ Block } alt="block" className="block-icon" />
+                    </div>
+                    <div className="lock-wrapper">
+                        <img src={ PythonClass } alt="python-class" className='class-new python-i' />
+                        <img src={ Block } alt="block" className="block-icon" />
+                    </div>
+                    <div className="lock-wrapper">
+                        <img src={ CsharpClass } alt="csharp-class" className='class-new cs-i' />
+                        <img src={ Block } alt="block" className="block-icon" />
+                    </div>
+                    <div className="lock-wrapper">
+                        <img src={ JavaClass } alt="java-class" className='class-new java-i' />
+                        <img src={ Block } alt="block" className="block-icon" />
+                    </div>
+                </div>
+            </section>
+        </div>
+    )
+}
+
+export { Clases };

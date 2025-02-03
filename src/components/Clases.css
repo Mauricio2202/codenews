@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", serif;
+}
+.title-news {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #DDD;
+    margin-top: 80px;
+}
+.class {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.class-new {
+    width: 600px;
+    margin: 20px;
+    transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+.react-class {
+    filter: brightness(1.2);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+    border-radius: 8px;
+}
+.kali-i, .python-i, .cs-i, .java-i {
+    filter: blur(5px);
+    opacity: 0.5;
+    pointer-events: none;
+}
+.block {
+    position: relative;
+    left: 73%;
+    top: 210px;
+    z-index: 1;
+}
+.lock-wrapper {
+    position: relative;
+    display: inline-block;
+    filter: grayscale(80%);
+    opacity: 0.6;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.block-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    opacity: 0.9;
+    pointer-events: none;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+}
+.block:hover .block-icon {
+    opacity: 1;
+}
+.class-new:hover {
+    filter: none;
+    opacity: 1;
+    transform: scale(1.05);
+}
+.react-class-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.react-class-countdown {
+    margin-top: 10px;
+    color: #DDD;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.react-class-countdown p {
+    margin: 5px 0;
+}
+@media (max-width: 768px) {
+    .title-news {
+        margin-top: 40px;
+    }
+    .class-new {
+        width: 100%;
+        max-width: 400px;
+        margin: 10px;
+    }
+    .class {
+        gap: 15px;
+    }
+    .react-class-container {
+        padding: 0 15px;
+    }
+}
+@media (max-width: 480px) {
+    .class-new {
+        width: 95%;
+        max-width: 350px;
+    }
+    .react-class-container {
+        padding: 0 10px;
+    }
+}
