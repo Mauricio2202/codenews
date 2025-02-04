@@ -15,6 +15,21 @@ body {
     align-items: center;
 }
 
+ul {
+    display: flex;
+    margin: 20px;
+    gap: 50px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #DDD;
+}
+
 .circle {
     margin-right: 20px;
     width: 25px;
@@ -101,6 +116,7 @@ p {
     transform: rotate(216deg) translateX(160px) rotate(-216deg);
 }
 
+
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
@@ -165,6 +181,21 @@ p {
 }
 
 @media screen and (max-width: 480px) {
+
+    h1 {
+        position: relative;
+        left: 25px;
+    }
+
+    ul {
+        display: flex;
+        text-align: center;
+    }
+
+    li {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
 
     .languajes {
         margin: 50px auto;
