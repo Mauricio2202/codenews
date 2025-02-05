@@ -25,7 +25,9 @@ h2 {
 @media screen and (max-width: 480px) {
     .news {
         position: relative;
-        left: 50px;
-        font-size: 1.5em;
+        left: 0; 
+        font-size: 1.2em;
+        padding: 0 15px; 
+        margin: 0 auto;
     }
 }

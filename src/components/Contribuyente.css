@@ -106,9 +106,11 @@ body {
 
 @media screen and (max-width: 480px) {
     .contribuyente {
-        font-size: 1.5em;
+        font-size: 1.2em;
         position: relative;
-        left: 15px;
+        left: 0;
+        padding: 0 15px;
+        margin: 0 auto;
     }
 
     h2 {
