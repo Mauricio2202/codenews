@@ -86,6 +86,39 @@ body {
 .react-class-countdown p {
     margin: 5px 0;
 }
+
+.enlace-meet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    background-color: #DA1E37;
+    border-radius: 5px;
+    padding: 8px 12px;
+    width: fit-content;
+    height: 40px;
+    margin: 0 auto;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { background-color: #DA1E37; box-shadow: 0 0 10px #DA1E37; }
+    50% { background-color: #FF3B50; box-shadow: 0 0 20px #FF3B50; } 
+    100% { background-color: #DA1E37; box-shadow: 0 0 10px #DA1E37; }
+}
+
+.meetIcon {
+    width: 20px;
+}
+
+.join {
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+}
+
+
 @media (max-width: 768px) {
     .title-news {
         margin-top: 40px;

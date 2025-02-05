@@ -5,6 +5,7 @@ import PythonClass from '../assets/python-course.png';
 import CsharpClass from '../assets/csharp-course.png';
 import JavaClass from '../assets/java-course.png';
 import Block from '../assets/block.png';
+import Meet from '../assets/meet.png';
 import { useState, useEffect } from 'react';
 import { formatDistanceToNow, format } from 'date-fns';
 
@@ -24,6 +25,10 @@ function Clases() {
         return () => clearInterval(interval);
     }, []);
 
+    function alertJoin() {
+        alert("Acceso no habilitado por el administrador");
+    }
+
     return (
         <div>
             <h1 className='title-news'>Anuncio de próximas clases</h1>
@@ -34,6 +39,10 @@ function Clases() {
                         <div className="react-class-countdown">
                             <p><strong>Primera clase de React:</strong></p>
                             <p>El {classDate}</p> 
+                            <a href="#" className='enlace-meet'>
+                                <img src={ Meet } alt="meet" className='meetIcon' />
+                                <p className='join' onClick={ alertJoin }>Unirse</p>
+                            </a>
                         </div>
                     </div>
                     <div className="lock-wrapper">
