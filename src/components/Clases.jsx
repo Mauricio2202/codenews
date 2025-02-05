@@ -26,7 +26,11 @@ function Clases() {
     }, []);
 
     function alertJoin() {
-        alert("Acceso no habilitado por el administrador");
+        alert("Acceso no habilitado por el administrador.");
+    }
+
+    function alertProx() {
+        alert("Intente nuevamente en el horario establecido.");
     }
 
     return (
@@ -39,9 +43,10 @@ function Clases() {
                         <div className="react-class-countdown">
                             <p><strong>Primera clase de React:</strong></p>
                             <p>El {classDate}</p> 
+                            <p>19:05 p.m. Hora México (7:05)</p>
                             <a href="#" className='enlace-meet'>
                                 <img src={ Meet } alt="meet" className='meetIcon' />
-                                <p className='join' onClick={ alertJoin }>Unirse</p>
+                                <p className='join' onClick={ alertProx }>Unirse</p>
                             </a>
                         </div>
                     </div>
