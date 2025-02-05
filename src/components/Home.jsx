@@ -11,17 +11,17 @@ function Home() {
         <div>
             <div className="cont-title">
                 <div className="circle"></div>
-                <h1>Noticias CodePulse</h1>
+                <h1 className='notices-codepulse'>Noticias CodePulse</h1>
             </div>
             <article>
                 <p>
                     ¡Hola a todos! <br /> En esta página encontrarás noticias sobre CodePulse, incluyendo actualizaciones
-                    sobre nuevas clases, eventos tecnológicos relevantes y recursos descargables. También publicaremos 
-                    explicaciones solicitadas por la comunidad de manera semanal. <br /><br />
+                    sobre <span>nuevas clases</span>, eventos tecnológicos relevantes y recursos descargables. También publicaremos 
+                    <span>explicaciones</span> solicitadas por la comunidad de manera semanal. <br /><br />
 
                     Si aún no formas parte de nuestra comunidad, puedes unirse con el botón que encontrarás abajo. <br /><br />
 
-                    Además, destacaremos a la persona más activa y colaborativa de la comunidad, mostrando su nombre y foto
+                    Además, destacaremos a la persona <span>más activa</span> y colaborativa de la comunidad, mostrando <span>su nombre y foto</span>
                     en la sección de contribuyente del mes.
                 </p>
                 <a href="https://chat.whatsapp.com/GpZP3i6ePsgErmukEFcJl5" className='comunnity'>
