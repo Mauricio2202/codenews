@@ -1,6 +1,6 @@
 import './Clases.css';
 import ReactClass from '../assets/react-course.png';
-import KaliClass from '../assets/kali-course.png';
+import KaliClass from '../assets/kali-course.jpg';
 import PythonClass from '../assets/python-course.png';
 import CsharpClass from '../assets/csharp-course.png';
 import JavaClass from '../assets/java-course.png';
@@ -47,7 +47,7 @@ function Clases() {
                     <img src={ KaliClass } alt="kali-class" className='class-new kali-i' />
                         
                         <div className="react-class-countdown">
-                            <p><strong>Primera clase de Vulnerabilidades:</strong></p>
+                            <p><strong>Primera clase de Kali:</strong></p>
                             <p>El {classDate}</p> 
                             <p>19:20 p.m. Hora México (7:20)</p>
                             {/* <a href="#" onClick={ alertEnd } className='enlace-meet'>
