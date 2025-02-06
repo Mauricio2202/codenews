@@ -4,7 +4,10 @@ import KaliClass from '../assets/kali-course.jpg';
 import PythonClass from '../assets/python-course.png';
 import CsharpClass from '../assets/csharp-course.png';
 import JavaClass from '../assets/java-course.png';
+import JavaScriptClass from '../assets/javascript-course.png';
+import IngenieriaClass from '../assets/ing-course.png';
 import Block from '../assets/block.png';
+import Diamond from '../assets/diamond.png';
 import Meet from '../assets/meet.png';
 import { useState, useEffect } from 'react';
 import { formatDistanceToNow, format } from 'date-fns';
@@ -71,6 +74,14 @@ function Clases() {
                     <div className="lock-wrapper">
                         <img src={ JavaClass } alt="java-class" className='class-new java-i' />
                         <img src={ Block } alt="block" className="block-icon" />
+                    </div>
+                    <div className="lock-wrapper">
+                        <img src={ JavaScriptClass } alt="javascript-class" className='class-new javascript-i' />
+                        <img src={ Block } alt="block" className="block-icon" />
+                    </div>
+                    <div className="lock-wrapper">
+                        <img src={ IngenieriaClass } alt="ingeniería-class" className='class-new ingenieria-i' />
+                        <img src={ Diamond } alt="block-diamond" className="block-icon" />
                     </div>
                 </div>
             </section>
