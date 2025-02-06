@@ -43,7 +43,7 @@ function Clases() {
                         <div className="react-class-countdown">
                             <p><strong>Primera clase de React:</strong></p>
                             <p>El {classDate}</p> 
-                            <p>19:05 p.m. Hora México (7:05)</p>
+                            <p>19:20 p.m. Hora México (7:20)</p>
                             <a href="#" className='enlace-meet'>
                                 <img src={ Meet } alt="meet" className='meetIcon' />
                                 <p className='join' onClick={ alertProx }>Unirse</p>
