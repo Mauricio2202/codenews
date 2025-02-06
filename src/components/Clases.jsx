@@ -14,7 +14,7 @@ function Clases() {
     const [classDate, setClassDate] = useState('');
 
     useEffect(() => {
-        const targetDate = new Date('2025-02-05T00:00:00'); 
+        const targetDate = new Date('2025-02-13T00:00:00'); 
 
         setClassDate(format(targetDate, 'dd MMMM yyyy'));
 
@@ -42,20 +42,22 @@ function Clases() {
             <h1 className='title-news'>Anuncio de próximas clases</h1>
             <section className="clases">
                 <div className="class">
+                {/* Esta es la clase que hace el diseño de una clase activa = react-class-container */}
                     <div className="react-class-container">
-                        <img src={ ReactClass } alt="react-class" className='class-new' />
+                    <img src={ KaliClass } alt="kali-class" className='class-new kali-i' />
+                        
                         <div className="react-class-countdown">
-                            <p><strong>Primera clase de React:</strong></p>
+                            <p><strong>Primera clase de Vulnerabilidades:</strong></p>
                             <p>El {classDate}</p> 
-                            {/* <p>19:20 p.m. Hora México (7:20)</p> */}
-                            <a href="#" onClick={ alertEnd } className='enlace-meet'>
+                            <p>19:20 p.m. Hora México (7:20)</p>
+                            {/* <a href="#" onClick={ alertEnd } className='enlace-meet'>
                                 <img src={ Meet } alt="meet" className='meetIcon' />
                                 <p className='join'>Finalizada</p>
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                     <div className="lock-wrapper">
-                        <img src={ KaliClass } alt="kali-class" className='class-new kali-i' />
+                        <img src={ ReactClass } alt="react-class" className='class-new react-i' />
                         <img src={ Block } alt="block" className="block-icon" />
                     </div>
                     <div className="lock-wrapper">
