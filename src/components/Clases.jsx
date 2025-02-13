@@ -55,7 +55,7 @@ function Clases() {
                             <p><strong>Primera clase de Kali:</strong></p>
                             <p>El {classDate}</p> 
                             <p>19:20 p.m. Hora México (7:20)</p>
-                            <a href="#" onClick={ alertEnd } className='enlace-meet'>
+                            <a href="#" onClick={ alertProx } className='enlace-meet'>
                                 <img src={ Meet } alt="meet" className='meetIcon' />
                                 <p className='join'>En espera</p>
                             </a>
