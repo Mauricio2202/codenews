@@ -34,7 +34,7 @@ body {
     border-radius: 8px;
 }
 .python-i, .cs-i, .java-i, .react-i, .javascript-i, .ingenieria-i {
-    filter: blur(5px);
+    filter: blur(2px);
     opacity: 0.5;
     pointer-events: none;
 }

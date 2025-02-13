@@ -40,6 +40,8 @@ function Clases() {
         alert("La clase finalizó.");
     }
 
+    let priceClass = 100;
+
     return (
         <div>
             <h1 className='title-news'>Anuncio de próximas clases</h1>
@@ -53,10 +55,10 @@ function Clases() {
                             <p><strong>Primera clase de Kali:</strong></p>
                             <p>El {classDate}</p> 
                             <p>19:20 p.m. Hora México (7:20)</p>
-                            {/* <a href="#" onClick={ alertEnd } className='enlace-meet'>
+                            <a href="#" onClick={ alertEnd } className='enlace-meet'>
                                 <img src={ Meet } alt="meet" className='meetIcon' />
-                                <p className='join'>Finalizada</p>
-                            </a> */}
+                                <p className='join'>En espera</p>
+                            </a>
                         </div>
                     </div>
                     <div className="lock-wrapper">
