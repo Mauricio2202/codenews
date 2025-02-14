@@ -49,17 +49,18 @@ function Clases() {
                 <div className="class">
                 {/* Esta es la clase que hace el diseño de una clase activa = react-class-container */}
                     <div className="react-class-container">
-                    
-                        
-                        {/* <div className="react-class-countdown">
-                            <p><strong>Primera clase de Kali:</strong></p>
-                            <p>El {classDate}</p> 
+                    <img src={ PythonClass } alt="python-class" className='class-new python-i' />
+
+                        <div className="react-class-countdown">
+                            <p><strong>Primera clase de Python POO</strong></p>
+                            <p>PRÓXIMAMENTE</p>
+                            {/* <p>El {classDate}</p> 
                             <p>19:20 p.m. Hora México (7:20)</p>
                             <a href="#" className='enlace-meet'>
                                 <img src={ Meet } alt="meet" onClick={ alertEnd } className='meetIcon' />
                                 <p className='join'>Finalizada</p>
-                            </a>
-                        </div> */}
+                            </a> */}
+                        </div>
                     </div>
                     <div className="lock-wrapper">
                     <img src={ KaliClass } alt="kali-class" className='class-new kali-i' />
@@ -71,7 +72,6 @@ function Clases() {
                         <img src={ Block } alt="block" className="block-icon" />
                     </div>
                     <div className="lock-wrapper">
-                        <img src={ PythonClass } alt="python-class" className='class-new python-i' />
                         <img src={ Block } alt="block" className="block-icon" />
                     </div>
                     <div className="lock-wrapper">
