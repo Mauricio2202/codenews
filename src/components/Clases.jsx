@@ -55,7 +55,8 @@ function Clases() {
                             <p><strong>Primera clase de Kali:</strong></p>
                             <p>El {classDate}</p> 
                             <p>19:20 p.m. Hora México (7:20)</p>
-                            <a href="#" onClick={ alertProx } className='enlace-meet'>
+                            <p>Código de acceso: vdp-xyvk-mvu</p>
+                            <a href="https://meet.google.com/vdp-xyvk-mvu" className='enlace-meet'>
                                 <img src={ Meet } alt="meet" className='meetIcon' />
                                 <p className='join'>En espera</p>
                             </a>
