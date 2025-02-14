@@ -58,7 +58,7 @@ function Clases() {
                             <p>Código de acceso: vdp-xyvk-mvu</p>
                             <a href="https://meet.google.com/vdp-xyvk-mvu" className='enlace-meet'>
                                 <img src={ Meet } alt="meet" className='meetIcon' />
-                                <p className='join'>En espera</p>
+                                <p className='join'>Unirse</p>
                             </a>
                         </div>
                     </div>
