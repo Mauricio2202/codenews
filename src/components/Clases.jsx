@@ -6,6 +6,7 @@ import CsharpClass from '../assets/csharp-course.png';
 import JavaClass from '../assets/java-course.png';
 import JavaScriptClass from '../assets/javascript-course.png';
 import IngenieriaClass from '../assets/ing-course.png';
+import RedesClass from '../assets/redes-course.png';
 import Block from '../assets/block.png';
 import Diamond from '../assets/diamond.png';
 import Meet from '../assets/meet.png';
@@ -17,7 +18,7 @@ function Clases() {
     const [classDate, setClassDate] = useState('');
 
     useEffect(() => {
-        const targetDate = new Date('2025-02-13T00:00:00'); 
+        const targetDate = new Date('2025-02-21T00:00:00'); 
 
         setClassDate(format(targetDate, 'dd MMMM yyyy'));
 
@@ -52,11 +53,11 @@ function Clases() {
                     <img src={ PythonClass } alt="python-class" className='class-new python-i' />
 
                         <div className="react-class-countdown">
-                            <p><strong>Primera clase de Python POO</strong></p>
+                            <p className='classTitle'><strong>Clase de Python POO</strong></p>
                             <p>PRÓXIMAMENTE</p>
-                            {/* <p>El {classDate}</p> 
+                            <p>El {classDate}</p> 
                             <p>19:20 p.m. Hora México (7:20)</p>
-                            <a href="#" className='enlace-meet'>
+                            {/* <a href="#" className='enlace-meet'>
                                 <img src={ Meet } alt="meet" onClick={ alertEnd } className='meetIcon' />
                                 <p className='join'>Finalizada</p>
                             </a> */}
@@ -69,9 +70,6 @@ function Clases() {
                     <div className="lock-wrapper">
                     
                         <img src={ ReactClass } alt="react-class" className='class-new react-i' />
-                        <img src={ Block } alt="block" className="block-icon" />
-                    </div>
-                    <div className="lock-wrapper">
                         <img src={ Block } alt="block" className="block-icon" />
                     </div>
                     <div className="lock-wrapper">
@@ -88,6 +86,10 @@ function Clases() {
                     </div>
                     <div className="lock-wrapper">
                         <img src={ IngenieriaClass } alt="ingeniería-class" className='class-new ingenieria-i' />
+                        <img src={ Diamond } alt="block-diamond" className="block-icon" />
+                    </div>
+                    <div className="lock-wrapper">
+                        <img src={ RedesClass } alt="redes-class" className='class-new redes-i' />
                         <img src={ Diamond } alt="block-diamond" className="block-icon" />
                     </div>
                 </div>

@@ -28,12 +28,21 @@ body {
     margin: 20px;
     transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
 }
+.classTitle {
+    color: #1dd3b0;
+    font-size: 40px;
+}
+.classTitle::selection {
+    background-color: #1dd3b0;
+    color: #000;
+}
+
 .react-class {
     filter: brightness(1.2);
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
     border-radius: 8px;
 }
-.cs-i, .java-i, .react-i, .javascript-i, .ingenieria-i, .kali-i {
+.cs-i, .java-i, .react-i, .javascript-i, .ingenieria-i, .kali-i, .redes-i {
     filter: blur(1px);
     opacity: 0.5;
     pointer-events: none;
