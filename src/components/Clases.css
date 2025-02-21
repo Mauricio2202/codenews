@@ -112,13 +112,15 @@ body {
     justify-content: center;
     gap: 10px;
     text-decoration: none;
-    background-color: #DA1E37;
+    /*background-color: #DA1E37;*/
+    background-color: #343a40;
     border-radius: 5px;
     padding: 8px 12px;
     width: fit-content;
     height: 40px;
     margin: 0 auto;
     animation: blink 1s infinite;
+    cursor: no-drop;
 }
 
 /* @keyframes blink {
@@ -135,6 +137,9 @@ body {
     color: #FFF;
     font-weight: bold;
     text-align: center;
+    background: #343a40;
+    color: #6c757d;
+
 }
 
 

@@ -57,10 +57,11 @@ function Clases() {
                             <p>PRÓXIMAMENTE</p>
                             <p>El {classDate}</p> 
                             <p>19:20 p.m. Hora México (7:20)</p>
-                            {/* <a href="#" className='enlace-meet'>
-                                <img src={ Meet } alt="meet" onClick={ alertEnd } className='meetIcon' />
-                                <p className='join'>Finalizada</p>
-                            </a> */}
+                            <a href="#" className='enlace-meet'>
+                                {/* Colocar EVENTO ONCLICK */}
+                                <img src={ Meet } alt="meet" className='meetIcon' />
+                                <p className='join'>En espera</p>
+                            </a>
                         </div>
                     </div>
                     <div className="lock-wrapper">
