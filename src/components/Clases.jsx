@@ -57,10 +57,10 @@ function Clases() {
                             <p>PRÓXIMAMENTE</p>
                             <p>El {classDate}</p> 
                             <p>19:20 p.m. Hora México (7:20)</p>
-                            <a href="#" className='enlace-meet'>
+                            <a href="https://meet.google.com/oqj-yeaw-kqo" className='enlace-meet'>
                                 {/* Colocar EVENTO ONCLICK */}
                                 <img src={ Meet } alt="meet" className='meetIcon' />
-                                <p className='join'>En espera</p>
+                                <p className='join'>Unirme</p>
                             </a>
                         </div>
                     </div>
