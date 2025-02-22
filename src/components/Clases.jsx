@@ -55,13 +55,12 @@ function Clases() {
                         <div className="react-class-countdown">
                             <p className='classTitle'><strong>Clase de Python POO</strong></p>
                             <p>PRÓXIMAMENTE</p>
-                            <p>El {classDate}</p> 
+                            {/* <p>El {classDate}</p> 
                             <p>19:20 p.m. Hora México (7:20)</p>
-                            <a href="https://meet.google.com/oqj-yeaw-kqo" className='enlace-meet'>
-                                {/* Colocar EVENTO ONCLICK */}
-                                <img src={ Meet } alt="meet" className='meetIcon' />
-                                <p className='join'>Unirme</p>
-                            </a>
+                            <a href="#" className='enlace-meet'>
+                                <img src={ Meet } alt="meet" onClick={alertEnd} className='meetIcon' />
+                                <p className='join'>Finalizada</p>
+                            </a> */}
                         </div>
                     </div>
                     <div className="lock-wrapper">

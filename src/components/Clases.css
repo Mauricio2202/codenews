@@ -113,7 +113,7 @@ body {
     gap: 10px;
     text-decoration: none;
     background-color: #DA1E37;
-    /* background-color: #343a40; */
+    background-color: #343a40; 
     border-radius: 5px;
     padding: 8px 12px;
     width: fit-content;
@@ -123,11 +123,11 @@ body {
     /*cursor: no-drop;*/
 }
 
-@keyframes blink {
+/* @keyframes blink {
     0% { background-color: #DA1E37; box-shadow: 0 0 10px #DA1E37; }
     50% { background-color: #FF3B50; box-shadow: 0 0 20px #FF3B50; } 
     100% { background-color: #DA1E37; box-shadow: 0 0 10px #DA1E37; }
-}
+} */
 
 .meetIcon {
     width: 20px;
@@ -138,7 +138,7 @@ body {
     font-weight: bold;
     text-align: center;
     /*background: #343a40;*/
-    /*color: #6c757d;*/
+    color: #6c757d;
 
 }
 
