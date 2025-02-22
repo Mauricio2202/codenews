@@ -16,86 +16,75 @@ import { formatDistanceToNow, format } from 'date-fns';
 function Clases() {
     const [timeLeft, setTimeLeft] = useState('');
     const [classDate, setClassDate] = useState('');
+    const [modalOpen, setModalOpen] = useState(false);
 
     useEffect(() => {
-        const targetDate = new Date('2025-02-21T00:00:00'); 
-
+        const targetDate = new Date('2025-02-28T00:00:00'); 
         setClassDate(format(targetDate, 'dd MMMM yyyy'));
-
         const interval = setInterval(() => {
             setTimeLeft(formatDistanceToNow(targetDate, { addSuffix: true }));
         }, 1000);
-
         return () => clearInterval(interval);
     }, []);
-
-    function alertJoin() {
-        alert("Acceso no habilitado por el administrador.");
-    }
-
-    function alertProx() {
-        alert("Intente nuevamente en el horario establecido.");
-    }
-
-    function alertEnd() {
-        alert("La clase finalizó.");
-    }
-
-    let priceClass = 100;
 
     return (
         <div>
             <h1 className='title-news'>Anuncio de próximas clases</h1>
             <section className="clases">
                 <div className="class">
-                {/* Esta es la clase que hace el diseño de una clase activa = react-class-container */}
                     <div className="react-class-container">
-                    <img src={ RedesClass } alt="redes-class" className='class-new redes-i' />
-
+                        <img src={RedesClass} alt="redes-class" className='class-new redes-i' />
                         <div className="react-class-countdown">
                             <p className='classTitle'><strong>Clase de Python POO</strong></p>
                             <p>PRÓXIMAMENTE</p>
-                            {/* <p>El {classDate}</p> 
+                            <p>El {classDate}</p> 
                             <p>19:20 p.m. Hora México (7:20)</p>
-                            <a href="#" className='enlace-meet'>
-                                <img src={ Meet } alt="meet" onClick={alertEnd} className='meetIcon' />
-                                <p className='join'>Finalizada</p>
-                            </a> */}
+                            <a href="#" className="enlace-meet" onClick={(e) => { e.preventDefault(); setModalOpen(true); }}>
+                                <img src={Meet} alt="meet" className='meetIcon' />
+                                <p className='join'>No Habilitado</p>
+                            </a>
                         </div>
                     </div>
                     <div className="lock-wrapper">
-                        <img src={ KaliClass } alt="kali-class" className='class-new kali-i' />
-                        <img src={ Block } alt="block" className="block-icon" />
+                        <img src={KaliClass} alt="kali-class" className='class-new kali-i' />
+                        <img src={Block} alt="block" className="block-icon" />
                     </div>
                     <div className="lock-wrapper">
-                    
-                        <img src={ ReactClass } alt="react-class" className='class-new react-i' />
-                        <img src={ Block } alt="block" className="block-icon" />
+                        <img src={ReactClass} alt="react-class" className='class-new react-i' />
+                        <img src={Block} alt="block" className="block-icon" />
                     </div>
                     <div className="lock-wrapper">
-                        <img src={ CsharpClass } alt="csharp-class" className='class-new cs-i' />
-                        <img src={ Block } alt="block" className="block-icon" />
+                        <img src={CsharpClass} alt="csharp-class" className='class-new cs-i' />
+                        <img src={Block} alt="block" className="block-icon" />
                     </div>
                     <div className="lock-wrapper">
-                        <img src={ JavaClass } alt="java-class" className='class-new java-i' />
-                        <img src={ Block } alt="block" className="block-icon" />
+                        <img src={JavaClass} alt="java-class" className='class-new java-i' />
+                        <img src={Block} alt="block" className="block-icon" />
                     </div>
                     <div className="lock-wrapper">
-                        <img src={ JavaScriptClass } alt="javascript-class" className='class-new javascript-i' />
-                        <img src={ Block } alt="block" className="block-icon" />
+                        <img src={JavaScriptClass} alt="javascript-class" className='class-new javascript-i' />
+                        <img src={Block} alt="block" className="block-icon" />
                     </div>
                     <div className="lock-wrapper">
-                        <img src={ IngenieriaClass } alt="ingeniería-class" className='class-new ingenieria-i' />
-                        <img src={ Diamond } alt="block-diamond" className="block-icon" />
+                        <img src={IngenieriaClass} alt="ingeniería-class" className='class-new ingenieria-i' />
+                        <img src={Diamond} alt="block-diamond" className="block-icon" />
                     </div>
                     <div className="lock-wrapper">
-                        <img src={ PythonClass } alt="python-class" className='class-new python-i' />
-                        <img src={ Block } alt="block-diamond" className="block-icon" />
+                        <img src={PythonClass} alt="python-class" className='class-new python-i' />
+                        <img src={Block} alt="block-diamond" className="block-icon" />
                     </div>
                 </div>
             </section>
+            {modalOpen && (
+                <div className="modal-overlay" onClick={() => setModalOpen(false)}>
+                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                        <p>Acceso no habilitado por el administrador.</p>
+                        <button onClick={() => setModalOpen(false)}>Cerrar</button>
+                    </div>
+                </div>
+            )}
         </div>
-    )
+    );
 }
 
 export { Clases };
