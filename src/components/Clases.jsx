@@ -35,7 +35,7 @@ function Clases() {
                     <div className="react-class-container">
                         <img src={RedesClass} alt="redes-class" className='class-new redes-i' />
                         <div className="react-class-countdown">
-                            <p className='classTitle'><strong>Clase de Python POO</strong></p>
+                            <p className='classTitle'><strong>Clase de Redes y Conectividad</strong></p>
                             <p>PRÓXIMAMENTE</p>
                             <p>El {classDate}</p> 
                             <p>19:20 p.m. Hora México (7:20)</p>
