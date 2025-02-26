@@ -7,6 +7,7 @@ import JavaClass from '../assets/java-course.png';
 import JavaScriptClass from '../assets/javascript-course.png';
 import IngenieriaClass from '../assets/ing-course.png';
 import RedesClass from '../assets/redes-course.png';
+import JavaIntroClass from '../assets/javai-course.jpg';
 import Block from '../assets/block.png';
 import Diamond from '../assets/diamond.png';
 import Meet from '../assets/meet.png';
@@ -42,6 +43,19 @@ function Clases() {
                             <a href="#" className="enlace-meet" onClick={(e) => { e.preventDefault(); setModalOpen(true); }}>
                                 <img src={Meet} alt="meet" className='meetIcon' />
                                 <p className='join'>No Habilitado</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="react-class-container">
+                        <img src={JavaIntroClass} alt="redes-class" className='class-new redes-i' />
+                        <div className="react-class-countdown">
+                            <p className='classTitle'><strong>Clase de Java</strong></p>
+                            <p>HOY</p>
+                            {/* <p>El {classDate}</p>  */}
+                            <p>19:30 p.m. Hora México (7:30)</p>
+                            <a href="#" className="enlace-meet" onClick={(e) => { e.preventDefault(); setModalOpen(true); }}>
+                                <img src={Meet} alt="meet" className='meetIcon' />
+                                <p className='join'>En espera</p>
                             </a>
                         </div>
                     </div>
