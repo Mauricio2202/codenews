@@ -12,16 +12,16 @@ function Contribuyente() {
             <div className="circle"></div>
                 <h1 className='contribuyente'>Contribuyente del mes</h1>
             </div>
-            <h2 className='subtitle-contribuyente'>{ nameContributor }</h2><br />
+            <h2 className='subtitle-contribuyente'>Espacio libre para un nuevo contribuyente</h2><br />
             <section className='container-contribuyente'>
             <div className="marco">
-                <img src={ ContributorTheMonth } alt="silueta" className="colaborator" />
+                <img src={ Silueta } alt="silueta" className="colaborator" />
                 {[...Array(15)].map((_, i) => (
                 <span key={i} className="estrellas"></span>
                 ))}
                 </div>
             </section><br /><br />
-            <article className="features">
+            {/* <article className="features">
                 <div className="caracter">
                     Programación de bot
                 </div>
@@ -34,7 +34,7 @@ function Contribuyente() {
                 <div className="caracter">
                     Creación de proyectos
                 </div>
-            </article>
+            </article> */}
         </div>
     )
 }

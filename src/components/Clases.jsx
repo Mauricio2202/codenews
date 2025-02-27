@@ -34,19 +34,6 @@ function Clases() {
             <section className="clases">
                 <div className="class">
                     <div className="react-class-container">
-                        <img src={JavaIntroClass} alt="javaIntro-class" className='class-new redes-i' />
-                        <div className="react-class-countdown">
-                            <p className='classTitle'><strong>Clase de Java Introductorio</strong></p>
-                            <p>HOY</p>
-                            {/* <p>El {classDate}</p>  */}
-                            <p>19:30 p.m. Hora México (7:30)</p>
-                            <a href="#" className="enlace-meet" onClick={(e) => { e.preventDefault(); setModalOpen(true); }}>
-                                <img src={Meet} alt="meet" className='meetIcon' />
-                                <p className='join'>Finalizada</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div className="react-class-container">
                         <img src={ KaliClass } alt="kali-class" className='class-new redes-i' />
                         <div className="react-class-countdown">
                             <p className='classTitle'><strong>Clase #2 de Kali Linux</strong></p>
@@ -72,10 +59,10 @@ function Clases() {
                             </a>
                         </div>
                     </div>
-                    {/* <div className="lock-wrapper">
-                        <img src={KaliClass} alt="kali-class" className='class-new kali-i' />
+                    <div className="lock-wrapper">
+                        <img src={ JavaIntroClass } alt="kali-class" className='class-new javai-i' />
                         <img src={Block} alt="block" className="block-icon" />
-                    </div> */}
+                    </div>
                     <div className="lock-wrapper">
                         <img src={ReactClass} alt="react-class" className='class-new react-i' />
                         <img src={Block} alt="block" className="block-icon" />

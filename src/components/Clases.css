@@ -25,6 +25,7 @@ body {
 }
 .class-new {
     width: 600px;
+    height: 320px;
     margin: 20px;
     transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
 }
@@ -42,7 +43,7 @@ body {
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
     border-radius: 8px;
 }
-.cs-i, .java-i, .react-i, .javascript-i, .ingenieria-i, .kali-i, .python-i {
+.cs-i, .java-i, .react-i, .javascript-i, .ingenieria-i, .kali-i, .python-i, .javai-i {
     filter: blur(1px);
     opacity: 0.5;
     pointer-events: none;
@@ -123,11 +124,11 @@ body {
     /*cursor: no-drop;*/
 }
 
-@keyframes blink {
+/* @keyframes blink {
     0% { background-color: #DA1E37; box-shadow: 0 0 10px #DA1E37; }
     50% { background-color: #FF3B50; box-shadow: 0 0 20px #FF3B50; } 
     100% { background-color: #DA1E37; box-shadow: 0 0 10px #DA1E37; }
-}
+} */
 
 .meetIcon {
     width: 20px;
