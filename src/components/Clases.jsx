@@ -37,7 +37,7 @@ function Clases() {
                         <img src={ KaliClass } alt="kali-class" className='class-new redes-i' />
                         <div className="react-class-countdown">
                             <p className='classTitle'><strong>Clase #2 de Kali Linux</strong></p>
-                            <p>MAÑANA</p>
+                            <p>ES HOY, ES HOY</p>
                             {/* <p>El {classDate}</p>  */}
                             <p>19:30 p.m. Hora México (7:30)</p>
                             <a href="#" className="enlace-meet" onClick={(e) => { e.preventDefault(); setModalOpen(true); }}>
