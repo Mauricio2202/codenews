@@ -8,6 +8,31 @@ body {
 nav {
     position: relative;
     padding: 10px 20px;
+    margin-top: 20px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(192, 0, 33, 0.4);
+    width: 50%;
+    padding: 13px;
+    font-size: 18px;
+    border-radius: 30px;
+    
+    /* Centrado en la pantalla */
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+ul:hover {
+    background: rgba(192, 0, 33, 0.5); 
+    box-shadow: 0 0 10px rgba(255, 0, 43, 0.5);
 }
 
 .menu-icon {

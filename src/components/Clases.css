@@ -200,6 +200,7 @@ body {
 @media (max-width: 480px) {
     .class-new {
         width: 95%;
+        height: 200px;
         max-width: 350px;
     }
     .react-class-container {
