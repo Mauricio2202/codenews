@@ -40,9 +40,9 @@ function Clases() {
                             <p>HOY</p>
                             {/* <p>El {classDate}</p>  */}
                             <p>19:30 p.m. Hora México (7:30)</p>
-                            <a href="https://meet.google.com/bkt-kvkc-igm" className="enlace-meet">
+                            <a href="#" className="enlace-meet" onClick={(e) => { e.preventDefault(); setModalOpen(true); }}>
                                 <img src={Meet} alt="meet" className='meetIcon' />
-                                <p className='join'>En vivo</p>
+                                <p className='join'>Finalizada</p>
                             </a>
                         </div>
                     </div>
