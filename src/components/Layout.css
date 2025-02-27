@@ -53,14 +53,19 @@ ul:hover {
         padding: 0;
     }
 
+    ul:hover {
+        background: #FFF;
+    }
+
     .menu-icon {
         display: block;
         height: auto;
         cursor: pointer;
         position: absolute;
         top: 10px;
+        left: 50%;
+        transform: translateX(-50%) scale(0.70);
         z-index: 10;
-        transform: scale(0.70);
     }
 
     .menu-list {
@@ -71,9 +76,10 @@ ul:hover {
         padding: 15px;
         border-radius: 5px;
         position: absolute;
-        top: 50px;
-        width: 90%;
-        left: 0;
+        top: 60px; /* Ajuste para evitar que aparezca demasiado arriba */
+        left: 45%;
+        transform: translateX(-50%);
+        width: 80%;
         max-height: 0;
         overflow: hidden;
         opacity: 0;
