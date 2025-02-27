@@ -34,10 +34,36 @@ function Clases() {
             <section className="clases">
                 <div className="class">
                     <div className="react-class-container">
+                        <img src={JavaIntroClass} alt="javaIntro-class" className='class-new redes-i' />
+                        <div className="react-class-countdown">
+                            <p className='classTitle'><strong>Clase de Java Introductorio</strong></p>
+                            <p>HOY</p>
+                            {/* <p>El {classDate}</p>  */}
+                            <p>19:30 p.m. Hora México (7:30)</p>
+                            <a href="https://meet.google.com/bkt-kvkc-igm" className="enlace-meet">
+                                <img src={Meet} alt="meet" className='meetIcon' />
+                                <p className='join'>En vivo</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="react-class-container">
+                        <img src={ KaliClass } alt="kali-class" className='class-new redes-i' />
+                        <div className="react-class-countdown">
+                            <p className='classTitle'><strong>Clase #2 de Kali Linux</strong></p>
+                            <p>MAÑANA</p>
+                            {/* <p>El {classDate}</p>  */}
+                            <p>19:30 p.m. Hora México (7:30)</p>
+                            <a href="#" className="enlace-meet" onClick={(e) => { e.preventDefault(); setModalOpen(true); }}>
+                                <img src={Meet} alt="meet" className='meetIcon' />
+                                <p className='join'>No Habilitado</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="react-class-container">
                         <img src={RedesClass} alt="redes-class" className='class-new redes-i' />
                         <div className="react-class-countdown">
                             <p className='classTitle'><strong>Clase de Redes y Conectividad</strong></p>
-                            <p>PRÓXIMAMENTE</p>
+                            <p>VIERNES</p>
                             <p>El {classDate}</p> 
                             <p>19:20 p.m. Hora México (7:20)</p>
                             <a href="#" className="enlace-meet" onClick={(e) => { e.preventDefault(); setModalOpen(true); }}>
@@ -46,23 +72,10 @@ function Clases() {
                             </a>
                         </div>
                     </div>
-                    <div className="react-class-container">
-                        <img src={JavaIntroClass} alt="redes-class" className='class-new redes-i' />
-                        <div className="react-class-countdown">
-                            <p className='classTitle'><strong>Clase de Java</strong></p>
-                            <p>HOY</p>
-                            {/* <p>El {classDate}</p>  */}
-                            <p>19:30 p.m. Hora México (7:30)</p>
-                            <a href="#" className="enlace-meet" onClick={(e) => { e.preventDefault(); setModalOpen(true); }}>
-                                <img src={Meet} alt="meet" className='meetIcon' />
-                                <p className='join'>En espera</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div className="lock-wrapper">
+                    {/* <div className="lock-wrapper">
                         <img src={KaliClass} alt="kali-class" className='class-new kali-i' />
                         <img src={Block} alt="block" className="block-icon" />
-                    </div>
+                    </div> */}
                     <div className="lock-wrapper">
                         <img src={ReactClass} alt="react-class" className='class-new react-i' />
                         <img src={Block} alt="block" className="block-icon" />
