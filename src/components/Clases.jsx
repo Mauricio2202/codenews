@@ -33,13 +33,13 @@ function Clases() {
             <h1 className='title-news'>Anuncio de próximas clases</h1>
             <section className="clases">
                 <div className="class">
-                    <div className="react-class-container">
-                        <img src={ KaliClass } alt="kali-class" className='class-new redes-i' />
+                <div className="react-class-container">
+                        <img src={RedesClass} alt="redes-class" className='class-new redes-i' />
                         <div className="react-class-countdown">
-                            <p className='classTitle'><strong>Clase #2 de Kali Linux</strong></p>
-                            <p>ES HOY, ES HOY</p>
-                            {/* <p>El {classDate}</p>  */}
-                            <p>19:30 p.m. Hora México (7:30)</p>
+                            <p className='classTitle'><strong>Clase de Redes y Conectividad</strong></p>
+                            <p>MAÑANA</p>
+                            <p>El {classDate}</p> 
+                            <p>19:20 p.m. Hora México (7:20)</p>
                             <a href="#" className="enlace-meet" onClick={(e) => { e.preventDefault(); setModalOpen(true); }}>
                                 <img src={Meet} alt="meet" className='meetIcon' />
                                 <p className='join'>No Habilitado</p>
@@ -47,12 +47,12 @@ function Clases() {
                         </div>
                     </div>
                     <div className="react-class-container">
-                        <img src={RedesClass} alt="redes-class" className='class-new redes-i' />
+                        <img src={ KaliClass } alt="kali-class" className='class-new redes-i' />
                         <div className="react-class-countdown">
-                            <p className='classTitle'><strong>Clase de Redes y Conectividad</strong></p>
-                            <p>VIERNES</p>
-                            <p>El {classDate}</p> 
-                            <p>19:20 p.m. Hora México (7:20)</p>
+                            <p className='classTitle'><strong>Clase #2 de Kali Linux</strong></p>
+                            <p>PRÓXIMAMENTE</p>
+                            {/* <p>El {classDate}</p>  */}
+                            <p>19:30 p.m. Hora México (7:30)</p>
                             <a href="#" className="enlace-meet" onClick={(e) => { e.preventDefault(); setModalOpen(true); }}>
                                 <img src={Meet} alt="meet" className='meetIcon' />
                                 <p className='join'>No Habilitado</p>
