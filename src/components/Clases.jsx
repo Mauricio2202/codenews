@@ -37,12 +37,12 @@ function Clases() {
                         <img src={RedesClass} alt="redes-class" className='class-new redes-i' />
                         <div className="react-class-countdown">
                             <p className='classTitle'><strong>Clase de Redes y Conectividad</strong></p>
-                            <p className='text-date'>EN VIVO</p>
+                            {/* <p className='text-date'>EN VIVO</p> */}
                             <p>El {classDate}</p> 
                             <p>19:20 p.m. Hora México (7:20)</p>
-                            <a href="https://meet.google.com/mbh-cgdw-dor" className="enlace-meet">
+                            <a href="#" className="enlace-meet" onClick={(e) => { e.preventDefault(); setModalOpen(true); }}>
                                 <img src={Meet} alt="meet" className='meetIcon' />
-                                <p className='join'>Unirse</p>
+                                <p className='join'>FINALIZADA</p>
                             </a>
                         </div>
                     </div>

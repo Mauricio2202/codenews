@@ -129,11 +129,11 @@ body {
     /*cursor: no-drop;*/
 }
 
-@keyframes blink {
+/* @keyframes blink {
     0% { background-color: #DA1E37; box-shadow: 0 0 10px #DA1E37; }
     50% { background-color: #FF3B50; box-shadow: 0 0 20px #FF3B50; } 
     100% { background-color: #DA1E37; box-shadow: 0 0 10px #DA1E37; }
-}
+} */
 
 .meetIcon {
     width: 20px;
