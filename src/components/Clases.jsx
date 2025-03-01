@@ -20,7 +20,7 @@ function Clases() {
     const [modalOpen, setModalOpen] = useState(false);
 
     useEffect(() => {
-        const targetDate = new Date('2025-02-28T00:00:00'); 
+        const targetDate = new Date('2025-02-28T00:00:00');
         setClassDate(format(targetDate, 'dd MMMM yyyy'));
         const interval = setInterval(() => {
             setTimeLeft(formatDistanceToNow(targetDate, { addSuffix: true }));
@@ -37,12 +37,12 @@ function Clases() {
                         <img src={RedesClass} alt="redes-class" className='class-new redes-i' />
                         <div className="react-class-countdown">
                             <p className='classTitle'><strong>Clase de Redes y Conectividad</strong></p>
-                            <p>HOY</p>
+                            <p className='text-date'>EN VIVO</p>
                             <p>El {classDate}</p> 
                             <p>19:20 p.m. Hora México (7:20)</p>
-                            <a href="#" className="enlace-meet" onClick={(e) => { e.preventDefault(); setModalOpen(true); }}>
+                            <a href="https://meet.google.com/mbh-cgdw-dor" className="enlace-meet">
                                 <img src={Meet} alt="meet" className='meetIcon' />
-                                <p className='join'>No Habilitado</p>
+                                <p className='join'>Unirse</p>
                             </a>
                         </div>
                     </div>

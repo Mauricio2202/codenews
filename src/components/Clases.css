@@ -7,6 +7,11 @@ body {
     font-family: "Poppins", serif;
     overflow-x: hidden;
 }
+.text-date {
+    color: #70e000;
+    font-size: 20px;
+    text-shadow: 0 0 10px #70e000;
+}
 .title-news {
     text-align: center;
     position: relative;
@@ -124,11 +129,11 @@ body {
     /*cursor: no-drop;*/
 }
 
-/* @keyframes blink {
+@keyframes blink {
     0% { background-color: #DA1E37; box-shadow: 0 0 10px #DA1E37; }
     50% { background-color: #FF3B50; box-shadow: 0 0 20px #FF3B50; } 
     100% { background-color: #DA1E37; box-shadow: 0 0 10px #DA1E37; }
-} */
+}
 
 .meetIcon {
     width: 20px;
