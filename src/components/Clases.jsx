@@ -35,7 +35,7 @@ function Clases() {
                 <div className="class">
                 
                     <div className="react-class-container">
-                        <img src={ KaliClass } alt="kali-class" className='class-new redes-i' />
+                        <img src={ KaliClass } alt="kali-class" className='class-new kali-i' />
                         <div className="react-class-countdown">
                             <p className='classTitle'><strong>Clase #2 de Kali Linux</strong></p>
                             <p>El {classDate}</p> 
@@ -48,10 +48,6 @@ function Clases() {
                     </div>
                     <div className="lock-wrapper">
                         <img src={ RedesClass } alt="redes-class" className='class-new redes-i' />
-                        <img src={Block} alt="block" className="block-icon" />
-                    </div>
-                    <div className="lock-wrapper">
-                        <img src={ JavaIntroClass } alt="kali-class" className='class-new javai-i' />
                         <img src={Block} alt="block" className="block-icon" />
                     </div>
                     <div className="lock-wrapper">
