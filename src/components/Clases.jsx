@@ -20,7 +20,7 @@ function Clases() {
     const [modalOpen, setModalOpen] = useState(false);
 
     useEffect(() => {
-        const targetDate = new Date('2025-02-28T00:00:00');
+        const targetDate = new Date('2025-03-05T00:00:00');
         setClassDate(format(targetDate, 'dd MMMM yyyy'));
         const interval = setInterval(() => {
             setTimeLeft(formatDistanceToNow(targetDate, { addSuffix: true }));
@@ -33,31 +33,26 @@ function Clases() {
             <h1 className='title-news'>Anuncio de próximas clases</h1>
             <section className="clases">
                 <div className="class">
-                <div className="react-class-container">
-                        <img src={RedesClass} alt="redes-class" className='class-new redes-i' />
-                        <div className="react-class-countdown">
-                            <p className='classTitle'><strong>Clase de Redes y Conectividad</strong></p>
-                            {/* <p className='text-date'>EN VIVO</p> */}
-                            <p>El {classDate}</p> 
-                            <p>19:20 p.m. Hora México (7:20)</p>
-                            <a href="#" className="enlace-meet" onClick={(e) => { e.preventDefault(); setModalOpen(true); }}>
-                                <img src={Meet} alt="meet" className='meetIcon' />
-                                <p className='join'>FINALIZADA</p>
-                            </a>
-                        </div>
-                    </div>
+                
                     <div className="react-class-container">
                         <img src={ KaliClass } alt="kali-class" className='class-new redes-i' />
                         <div className="react-class-countdown">
                             <p className='classTitle'><strong>Clase #2 de Kali Linux</strong></p>
-                            <p>PRÓXIMAMENTE</p>
-                            {/* <p>El {classDate}</p>  */}
+                            <p>El {classDate}</p> 
                             <p>19:30 p.m. Hora México (7:30)</p>
                             <a href="#" className="enlace-meet" onClick={(e) => { e.preventDefault(); setModalOpen(true); }}>
                                 <img src={Meet} alt="meet" className='meetIcon' />
                                 <p className='join'>No Habilitado</p>
                             </a>
                         </div>
+                    </div>
+                    <div className="lock-wrapper">
+                        <img src={ RedesClass } alt="redes-class" className='class-new redes-i' />
+                        <img src={Block} alt="block" className="block-icon" />
+                    </div>
+                    <div className="lock-wrapper">
+                        <img src={ JavaIntroClass } alt="kali-class" className='class-new javai-i' />
+                        <img src={Block} alt="block" className="block-icon" />
                     </div>
                     <div className="lock-wrapper">
                         <img src={ JavaIntroClass } alt="kali-class" className='class-new javai-i' />
