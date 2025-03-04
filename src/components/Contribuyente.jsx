@@ -1,10 +1,10 @@
 import './Contribuyente.css'
 import Silueta from '../assets/silueta.jpg'
-import ContributorTheMonth from '../assets/contributors/Jeilin-Developer.jpg';
+import ContributorTheMonth from '../assets/contributors/dancarDev.jpg';
 
 function Contribuyente() {
 
-    let nameContributor = 'Jeilin Developer';
+    let nameContributor = 'Dancar Dev Cibersecurity';
 
     return (
         <div>
@@ -12,29 +12,29 @@ function Contribuyente() {
             <div className="circle"></div>
                 <h1 className='contribuyente'>Contribuyente del mes</h1>
             </div>
-            <h2 className='subtitle-contribuyente'>Espacio libre para un nuevo contribuyente</h2><br />
+            <h2 className='subtitle-contribuyente'>{ nameContributor }</h2><br />
             <section className='container-contribuyente'>
             <div className="marco">
-                <img src={ Silueta } alt="silueta" className="colaborator" />
+                <img src={ ContributorTheMonth } alt="silueta" className="colaborator" />
                 {[...Array(15)].map((_, i) => (
                 <span key={i} className="estrellas"></span>
                 ))}
                 </div>
             </section><br /><br />
-            {/* <article className="features">
+            <article className="features">
                 <div className="caracter">
-                    Programación de bot
+                    Clases de forma activa
                 </div>
                 <div className="caracter caract-i">
-                    Ayuda continua
+                    Resolución de dudas
                 </div>
                 <div className="caracter">
-                    Asesoramiento
+                    Ciberseguridad
                 </div>
                 <div className="caracter">
-                    Creación de proyectos
+                    Apoyo emocional
                 </div>
-            </article> */}
+            </article>
         </div>
     )
 }
