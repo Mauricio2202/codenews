@@ -20,7 +20,7 @@ function Clases() {
     const [modalOpen, setModalOpen] = useState(false);
 
     useEffect(() => {
-        const targetDate = new Date('2025-03-05T00:00:00');
+        const targetDate = new Date('2025-03-06T00:00:00');
         setClassDate(format(targetDate, 'dd MMMM yyyy'));
         const interval = setInterval(() => {
             setTimeLeft(formatDistanceToNow(targetDate, { addSuffix: true }));
