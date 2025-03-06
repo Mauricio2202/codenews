@@ -20,7 +20,7 @@ function Clases() {
     const [modalOpen, setModalOpen] = useState(false);
 
     useEffect(() => {
-        const targetDate = new Date('2025-03-06T00:00:00');
+        const targetDate = new Date('2025-03-14T00:00:00');
         setClassDate(format(targetDate, 'dd MMMM yyyy'));
         const interval = setInterval(() => {
             setTimeLeft(formatDistanceToNow(targetDate, { addSuffix: true }));
@@ -33,16 +33,27 @@ function Clases() {
             <h1 className='title-news'>Anuncio de próximas clases</h1>
             <section className="clases">
                 <div className="class">
-                
+                <div className="react-class-container">
+                        <img src={ JavaScriptClass } alt="javascript-class" className='class-new javascript-i' />
+                        <div className="react-class-countdown">
+                            <p className='classTitle'><strong>Clase #1 JavaScript</strong></p>
+                            <p>El {classDate}</p> 
+                            <p>19:30 p.m. Hora México (7:30)</p>
+                            <a href="#" className="enlace-meet">
+                                <img src={Meet} alt="meet" className='meetIcon' />
+                                <p className='join'>Bloqueado</p>
+                            </a>
+                        </div>
+                    </div>
                     <div className="react-class-container">
                         <img src={ KaliClass } alt="kali-class" className='class-new kali-i' />
                         <div className="react-class-countdown">
                             <p className='classTitle'><strong>Clase #2 de Kali Linux</strong></p>
-                            <p>El {classDate}</p> 
-                            <p>19:30 p.m. Hora México (7:30)</p>
+                            {/* <p>El {classDate}</p> 
+                            <p>19:30 p.m. Hora México (7:30)</p> */}
                             <a href="#" className="enlace-meet" onClick={(e) => { e.preventDefault(); setModalOpen(true); }}>
                                 <img src={Meet} alt="meet" className='meetIcon' />
-                                <p className='join'>No Habilitado</p>
+                                <p className='join'>Aviso</p>
                             </a>
                         </div>
                     </div>
@@ -66,10 +77,10 @@ function Clases() {
                         <img src={JavaClass} alt="java-class" className='class-new java-i' />
                         <img src={Block} alt="block" className="block-icon" />
                     </div>
-                    <div className="lock-wrapper">
+                    {/* <div className="lock-wrapper">
                         <img src={JavaScriptClass} alt="javascript-class" className='class-new javascript-i' />
                         <img src={Block} alt="block" className="block-icon" />
-                    </div>
+                    </div> */}
                     <div className="lock-wrapper">
                         <img src={IngenieriaClass} alt="ingeniería-class" className='class-new ingenieria-i' />
                         <img src={Diamond} alt="block-diamond" className="block-icon" />
@@ -83,7 +94,7 @@ function Clases() {
             {modalOpen && (
                 <div className="modal-overlay" onClick={() => setModalOpen(false)}>
                     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                        <p>Acceso no habilitado por el administrador.</p>
+                        <p>Clase suspendida hasta nuevo aviso</p>
                         <button onClick={() => setModalOpen(false)}>Cerrar</button>
                     </div>
                 </div>
