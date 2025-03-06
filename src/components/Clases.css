@@ -35,7 +35,7 @@ body {
     transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
 }
 .classTitle {
-    color: #7b2cbf;
+    color: #fcf300;
     font-size: 40px;
 }
 .classTitle::selection {
@@ -48,7 +48,7 @@ body {
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
     border-radius: 8px;
 }
-.cs-i, .java-i, .react-i, .javascript-i, .ingenieria-i, .python-i, .redes-i, .javai-i {
+.cs-i, .java-i, .react-i, .ingenieria-i, .python-i, .redes-i, .javai-i {
     filter: blur(1px);
     opacity: 0.5;
     pointer-events: none;
@@ -102,11 +102,11 @@ body {
     width: 600px;
     position: relative;
     left: 20px;
-    border: 1px solid #7b2cbf;
+    border: 1px solid #fcf300;
 }
 .react-class-countdown:hover {
     transition: 0.4s;
-    box-shadow: 10px 10px 0px #7b2cbf;
+    box-shadow: 10px 10px 0px #fcf300;
 }
 .react-class-countdown p {
     margin: 5px 0;
