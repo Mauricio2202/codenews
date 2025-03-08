@@ -29,14 +29,14 @@ body {
     overflow-x: hidden;
 }
 .class-new {
-    width: 600px;
-    height: 320px;
+    width: 500px;
+    height: 270px;
     margin: 20px;
     transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
 }
 .classTitle {
     color: #fcf300;
-    font-size: 40px;
+    font-size: 30px;
 }
 .classTitle::selection {
     background-color: #c9184a;
@@ -48,7 +48,7 @@ body {
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
     border-radius: 8px;
 }
-.cs-i, .java-i, .react-i, .ingenieria-i, .python-i, .redes-i, .javai-i {
+.cs-i, .java-i, .react-i, .ingenieria-i, .python-i, .redes-i, .javai-i, .kali-i {
     filter: blur(1px);
     opacity: 0.5;
     pointer-events: none;
@@ -99,7 +99,7 @@ body {
     font-weight: bold;
     background: rgba(52, 58, 64, 0.2);
     padding: 6px;
-    width: 600px;
+    width: 500px;
     position: relative;
     left: 20px;
     border: 1px solid #fcf300;

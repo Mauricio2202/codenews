@@ -13,6 +13,7 @@ import Diamond from '../assets/diamond.png';
 import Meet from '../assets/meet.png';
 import { useState, useEffect } from 'react';
 import { formatDistanceToNow, format } from 'date-fns';
+import { TemarioJs } from './TemarioJs';
 
 function Clases() {
     const [timeLeft, setTimeLeft] = useState('');
@@ -37,25 +38,16 @@ function Clases() {
                         <img src={ JavaScriptClass } alt="javascript-class" className='class-new javascript-i' />
                         <div className="react-class-countdown">
                             <p className='classTitle'><strong>Clase #1 JavaScript</strong></p>
-                            <p>El {classDate}</p> 
-                            <p>19:30 p.m. Hora México (7:30)</p>
+                            <p>El {classDate} - 07:30 p.m.</p> 
                             <a href="#" className="enlace-meet">
                                 <img src={Meet} alt="meet" className='meetIcon' />
                                 <p className='join'>Bloqueado</p>
                             </a>
                         </div>
                     </div>
-                    <div className="react-class-container">
+                    <div className="lock-wrapper">
                         <img src={ KaliClass } alt="kali-class" className='class-new kali-i' />
-                        <div className="react-class-countdown">
-                            <p className='classTitle'><strong>Clase #2 de Kali Linux</strong></p>
-                            {/* <p>El {classDate}</p> 
-                            <p>19:30 p.m. Hora México (7:30)</p> */}
-                            <a href="#" className="enlace-meet" onClick={(e) => { e.preventDefault(); setModalOpen(true); }}>
-                                <img src={Meet} alt="meet" className='meetIcon' />
-                                <p className='join'>Aviso</p>
-                            </a>
-                        </div>
+                        <img src={Block} alt="block" className="block-icon" />
                     </div>
                     <div className="lock-wrapper">
                         <img src={ RedesClass } alt="redes-class" className='class-new redes-i' />
@@ -67,10 +59,6 @@ function Clases() {
                     </div>
                     <div className="lock-wrapper">
                         <img src={ReactClass} alt="react-class" className='class-new react-i' />
-                        <img src={Block} alt="block" className="block-icon" />
-                    </div>
-                    <div className="lock-wrapper">
-                        <img src={CsharpClass} alt="csharp-class" className='class-new cs-i' />
                         <img src={Block} alt="block" className="block-icon" />
                     </div>
                     <div className="lock-wrapper">
