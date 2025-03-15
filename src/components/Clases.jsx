@@ -38,9 +38,12 @@ function Clases() {
                         <div className="react-class-countdown">
                             <p className='classTitle'><strong>Clase #1 JavaScript</strong></p>
                             <p>El {classDate} - 07:30 p.m.</p> 
-                            <a href="#" className="enlace-meet">
-                                <img src={Meet} alt="meet" className='meetIcon' />
-                                <p className='join'>Bloqueado</p>
+                            <a href="#" className="enlace-meet" onClick={(e) => { 
+                                e.preventDefault(); // Evita que el enlace navegue a otra página
+                                setModalOpen(true); // Abre el modal
+                            }}>
+                            <img src={Meet} alt="meet" className='meetIcon' />
+                            <p className='join'>Bloqueado</p>
                             </a>
                         </div>
                     </div>
@@ -81,7 +84,7 @@ function Clases() {
             {modalOpen && (
                 <div className="modal-overlay" onClick={() => setModalOpen(false)}>
                     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                        <p>Clase suspendida hasta nuevo aviso</p>
+                        <p>Clase aún no disponible</p>
                         <button onClick={() => setModalOpen(false)}>Cerrar</button>
                     </div>
                 </div>
