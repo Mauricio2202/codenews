@@ -13,7 +13,6 @@ import Diamond from '../assets/diamond.png';
 import Meet from '../assets/meet.png';
 import { useState, useEffect } from 'react';
 import { formatDistanceToNow, format } from 'date-fns';
-import { TemarioJs } from './TemarioJs';
 
 function Clases() {
     const [timeLeft, setTimeLeft] = useState('');
@@ -21,7 +20,7 @@ function Clases() {
     const [modalOpen, setModalOpen] = useState(false);
 
     useEffect(() => {
-        const targetDate = new Date('2025-03-14T00:00:00');
+        const targetDate = new Date('2025-03-15T00:00:00');
         setClassDate(format(targetDate, 'dd MMMM yyyy'));
         const interval = setInterval(() => {
             setTimeLeft(formatDistanceToNow(targetDate, { addSuffix: true }));
