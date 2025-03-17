@@ -83,7 +83,7 @@ function Clases() {
             {modalOpen && (
                 <div className="modal-overlay" onClick={() => setModalOpen(false)}>
                     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                        <p>¡Clase disponible mañana al horario hora México!</p>
+                        <p>¡El curso inicia dentro de poco!</p>
                         <button onClick={() => setModalOpen(false)}>Cerrar</button>
                     </div>
                 </div>
