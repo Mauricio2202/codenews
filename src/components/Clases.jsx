@@ -2,7 +2,6 @@ import './Clases.css';
 import ReactClass from '../assets/react-course.png';
 import KaliClass from '../assets/kali-course.jpg';
 import PythonClass from '../assets/python-course.png';
-import CsharpClass from '../assets/csharp-course.png';
 import JavaClass from '../assets/java-course.png';
 import JavaScriptClass from '../assets/javascript-course.png';
 import IngenieriaClass from '../assets/ing-course.png';
@@ -20,7 +19,7 @@ function Clases() {
     const [modalOpen, setModalOpen] = useState(false);
 
     useEffect(() => {
-        const targetDate = new Date('2025-03-15T00:00:00');
+        const targetDate = new Date('2025-03-17T00:00:00');
         setClassDate(format(targetDate, 'dd MMMM yyyy'));
         const interval = setInterval(() => {
             setTimeLeft(formatDistanceToNow(targetDate, { addSuffix: true }));
