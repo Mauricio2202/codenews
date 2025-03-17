@@ -1,10 +1,10 @@
 import './Contribuyente.css'
 import Silueta from '../assets/silueta.jpg'
-import ContributorTheMonth from '../assets/contributors/dancarDev.jpg';
+import Dancar from '../assets/contributors/dancarDev.jpg';
 
 function Contribuyente() {
 
-    let nameContributor = 'Dancar Dev Cibersecurity';
+    let nameContributor = '¿Qué esperas para serlo?, el mes aún no termina';
 
     return (
         <div>
@@ -15,7 +15,7 @@ function Contribuyente() {
             <h2 className='subtitle-contribuyente'>{ nameContributor }</h2><br />
             <section className='container-contribuyente'>
             <div className="marco">
-                <img src={ ContributorTheMonth } alt="silueta" className="colaborator" />
+                <img src={ Silueta } alt="silueta" className="colaborator" />
                 {[...Array(15)].map((_, i) => (
                 <span key={i} className="estrellas"></span>
                 ))}
@@ -23,16 +23,16 @@ function Contribuyente() {
             </section><br /><br />
             <article className="features">
                 <div className="caracter">
-                    Clases de forma activa
+                    Destaca tu actividad en la comunidad
                 </div>
                 <div className="caracter caract-i">
-                    Resolución de dudas
+                    Resuelve dudas en la comunidad
                 </div>
                 <div className="caracter">
-                    Ciberseguridad
+                    Comparte recursos tecnológicos
                 </div>
                 <div className="caracter">
-                    Apoyo emocional
+                    Se influyente
                 </div>
             </article>
         </div>

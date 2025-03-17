@@ -38,8 +38,8 @@ function Clases() {
                             <p className='classTitle'><strong>Clase #1 JavaScript</strong></p>
                             <p>El {classDate} - 07:30 p.m.</p> 
                             <a href="#" className="enlace-meet" onClick={(e) => { 
-                                e.preventDefault(); // Evita que el enlace navegue a otra página
-                                setModalOpen(true); // Abre el modal
+                                e.preventDefault(); 
+                                setModalOpen(true); 
                             }}>
                             <img src={Meet} alt="meet" className='meetIcon' />
                             <p className='join'>Bloqueado</p>
@@ -83,7 +83,7 @@ function Clases() {
             {modalOpen && (
                 <div className="modal-overlay" onClick={() => setModalOpen(false)}>
                     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                        <p>Clase aún no disponible</p>
+                        <p>¡Clase disponible mañana al horario hora México!</p>
                         <button onClick={() => setModalOpen(false)}>Cerrar</button>
                     </div>
                 </div>
