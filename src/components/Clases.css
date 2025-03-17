@@ -220,7 +220,7 @@ body {
         left: -1px;
     }
 
-    .cs-i, .java-i, .react-i, .javascript-i, .ingenieria-i, .kali-i {
+    .cs-i, .java-i, .react-i, .ingenieria-i, .kali-i {
         filter: blur(1px);
         pointer-events: none;
     }
