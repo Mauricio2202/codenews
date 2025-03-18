@@ -36,13 +36,10 @@ function Clases() {
                         <img src={ JavaScriptClass } alt="javascript-class" className='class-new javascript-i' />
                         <div className="react-class-countdown">
                             <p className='classTitle'><strong>Clase #1 JavaScript</strong></p>
-                            <p>El {classDate} - 07:30 p.m.</p> 
-                            <a href="#" className="enlace-meet" onClick={(e) => { 
-                                e.preventDefault(); 
-                                setModalOpen(true); 
-                            }}>
-                            <img src={Meet} alt="meet" className='meetIcon' />
-                            <p className='join'>Bloqueado</p>
+                            <p>El { classDate } - 07:30 p.m.</p> 
+                            <a href="https://meet.google.com/nbs-euki-dhi" className="enlace-meet">
+                            <img src={ Meet } alt="meet" className='meetIcon' />
+                            <p className='join'>Unirse</p>
                             </a>
                         </div>
                     </div>
@@ -51,9 +48,12 @@ function Clases() {
                         <div className="react-class-countdown">
                             <p className='classTitle'><strong>Introducción al Cifrado</strong></p>
                             <p>El {classDate} - 06:30 p.m.</p> 
-                            <a href="https://meet.google.com/ktp-fvkm-qfi" className="enlace-meet">
+                            <a href="#" className="enlace-meet" onClick={(e) => { 
+                                e.preventDefault(); 
+                                setModalOpen(true); 
+                            }}>
                             <img src={Meet} alt="meet" className='meetIcon' />
-                            <p className='join'>Acceder</p>
+                            <p className='join'>Finalizada</p>
                             </a>
                         </div>
                     </div>
@@ -94,7 +94,7 @@ function Clases() {
             {modalOpen && (
                 <div className="modal-overlay" onClick={() => setModalOpen(false)}>
                     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                        <p>¡El curso inicia dentro de poco!</p>
+                        <p>¡La clase finalizó!</p>
                         <button onClick={() => setModalOpen(false)}>Cerrar</button>
                     </div>
                 </div>
