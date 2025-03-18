@@ -46,10 +46,21 @@ function Clases() {
                             </a>
                         </div>
                     </div>
-                    <div className="lock-wrapper">
+                    <div className="react-class-container">
+                        <img src={ KaliClass } alt="javascript-class" className='class-new javascript-i' />
+                        <div className="react-class-countdown">
+                            <p className='classTitle'><strong>Introducción al Cifrado</strong></p>
+                            <p>El {classDate} - 06:30 p.m.</p> 
+                            <a href="https://meet.google.com/ktp-fvkm-qfi" className="enlace-meet">
+                            <img src={Meet} alt="meet" className='meetIcon' />
+                            <p className='join'>Acceder</p>
+                            </a>
+                        </div>
+                    </div>
+                    {/* <div className="lock-wrapper">
                         <img src={ KaliClass } alt="kali-class" className='class-new kali-i' />
                         <img src={Block} alt="block" className="block-icon" />
-                    </div>
+                    </div> */}
                     <div className="lock-wrapper">
                         <img src={ RedesClass } alt="redes-class" className='class-new redes-i' />
                         <img src={Block} alt="block" className="block-icon" />
