@@ -37,9 +37,12 @@ function Clases() {
                         <div className="react-class-countdown">
                             <p className='classTitle'><strong>Clase #1 JavaScript</strong></p>
                             <p>El { classDate } - 07:30 p.m.</p> 
-                            <a href="https://meet.google.com/nbs-euki-dhi" className="enlace-meet">
+                            <a href="#" className="enlace-meet" onClick={(e) => { 
+                                e.preventDefault(); 
+                                setModalOpen(true); 
+                            }}>
                             <img src={ Meet } alt="meet" className='meetIcon' />
-                            <p className='join'>Unirse</p>
+                            <p className='join'>Finalizada</p>
                             </a>
                         </div>
                     </div>
