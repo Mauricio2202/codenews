@@ -7,6 +7,7 @@ import JavaScriptClass from '../assets/javascript-course.png';
 import IngenieriaClass from '../assets/ing-course.png';
 import RedesClass from '../assets/redes-course.png';
 import JavaIntroClass from '../assets/javai-course.jpg';
+import NodeClass from '../assets/cnodejs.png';
 import Block from '../assets/block.png';
 import Diamond from '../assets/diamond.png';
 import Meet from '../assets/meet.png';
@@ -60,6 +61,10 @@ function Clases() {
                     </div>
                     <div className="lock-wrapper">
                         <img src={ReactClass} alt="react-class" className='class-new react-i' />
+                        <img src={Block} alt="block" className="block-icon" />
+                    </div>
+                    <div className="lock-wrapper">
+                        <img src={NodeClass} alt="node-class" className='class-new node-i' />
                         <img src={Block} alt="block" className="block-icon" />
                     </div>
                     <div className="lock-wrapper">

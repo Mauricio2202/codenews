@@ -48,7 +48,7 @@ body {
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
     border-radius: 8px;
 }
-.cs-i, .java-i, .react-i, .ingenieria-i, .python-i, .redes-i, .javai-i, .kali-i {
+.cs-i, .java-i, .react-i, .ingenieria-i, .python-i, .redes-i, .javai-i, .kali-i, .node-i {
     filter: blur(1px);
     opacity: 0.5;
     pointer-events: none;
