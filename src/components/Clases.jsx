@@ -43,7 +43,7 @@ function Clases() {
                                 setModalOpen(true); 
                             }}>
                             <img src={ Meet } alt="meet" className='meetIcon' />
-                            <p className='join'>No me des clic</p>
+                            <p className='join'>Ahora si dame clic</p>
                             </a>
                         </div>
                     </div>
@@ -88,7 +88,7 @@ function Clases() {
             {modalOpen && (
                 <div className="modal-overlay" onClick={() => setModalOpen(false)}>
                     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                        <p>¡Que no me des clic JAJA!</p>
+                        <p>¡Uy la clase ya acabó!</p>
                         <button onClick={() => setModalOpen(false)}>Cerrar</button>
                     </div>
                 </div>
