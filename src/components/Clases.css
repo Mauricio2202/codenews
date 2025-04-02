@@ -35,7 +35,7 @@ body {
     transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
 }
 .classTitle {
-    color: #fcf300;
+    color: #90e0ef;
     font-size: 30px;
 }
 .classTitle::selection {
@@ -48,7 +48,7 @@ body {
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
     border-radius: 8px;
 }
-.cs-i, .java-i, .react-i, .ingenieria-i, .python-i, .redes-i, .javai-i, .kali-i, .node-i {
+.cs-i, .java-i, .react-i, .python-i, .redes-i, .javai-i, .kali-i, .node-i, .javascript-i {
     filter: blur(1px);
     opacity: 0.5;
     pointer-events: none;
@@ -102,11 +102,11 @@ body {
     width: 500px;
     position: relative;
     left: 20px;
-    border: 1px solid #fcf300;
+    border: 1px solid #90e0ef;
 }
 .react-class-countdown:hover {
     transition: 0.4s;
-    box-shadow: 10px 10px 0px #fcf300;
+    box-shadow: 10px 10px 0px #90e0ef;
 }
 .react-class-countdown p {
     margin: 5px 0;
@@ -129,11 +129,11 @@ body {
     /*cursor: no-drop;*/
 }
 
-/* @keyframes blink {
+@keyframes blink {
     0% { background-color: #DA1E37; box-shadow: 0 0 10px #DA1E37; }
     50% { background-color: #FF3B50; box-shadow: 0 0 20px #FF3B50; } 
     100% { background-color: #DA1E37; box-shadow: 0 0 10px #DA1E37; }
-} */
+}
 
 .meetIcon {
     width: 20px;
@@ -167,7 +167,9 @@ body {
     padding: 20px;
     border-radius: 8px;
     text-align: center;
-    box-shadow: 0 0 10px rgba(52, 58, 64, 0.25);
+    box-shadow: 0 0 10px #4361ee;
+    box-shadow: 0 0 40px #4361ee;
+    box-shadow: 0 0 90px #4361ee;
 }
 
 .modal-content button {
@@ -201,6 +203,30 @@ body {
     .react-class-container {
         padding: 0 15px;
     }
+
+    .modal-content {
+        width: 90%;
+        max-width: 400px;
+        padding: 15px;
+        font-size: 14px;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+
+    .modal-content p {
+        margin-bottom: 10px;
+        line-height: 1.4;
+    }
+
+    .modal-content h1 {
+        font-size: 18px;
+    }
+
+    .modal-content button {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
 }
 @media (max-width: 480px) {
     .class-new {
@@ -220,7 +246,7 @@ body {
         left: -1px;
     }
 
-    .cs-i, .java-i, .react-i, .ingenieria-i {
+    .cs-i, .java-i, .react-i, .javascript-i {
         filter: blur(1px);
         pointer-events: none;
     }

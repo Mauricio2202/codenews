@@ -34,16 +34,17 @@ function Clases() {
             <section className="clases">
                 <div className="class">
                 <div className="react-class-container">
-                        <img src={ JavaScriptClass } alt="javascript-class" className='class-new javascript-i' />
+                        <img src={ IngenieriaClass } alt="ingenieria-class" className='class-new ingenieria-i' />
                         <div className="react-class-countdown">
-                            <p className='classTitle'><strong>Clase #2 JavaScript</strong></p>
-                            <p>El { classDate } - 07:30 p.m.</p> 
+                            <p className='classTitle'><strong>Curso Ingeniería de Software</strong></p>
+                            {/* <p>El { classDate } - 07:30 p.m.</p>  */}
+                            <p>PRÓXIMAMENTE</p> 
                             <a href="#" className="enlace-meet" onClick={(e) => { 
                                 e.preventDefault(); 
                                 setModalOpen(true); 
                             }}>
                             <img src={ Meet } alt="meet" className='meetIcon' />
-                            <p className='join'>Ahora si dame clic</p>
+                            <p className='join'>EXCLUSIVO</p>
                             </a>
                         </div>
                     </div>
@@ -71,14 +72,14 @@ function Clases() {
                         <img src={JavaClass} alt="java-class" className='class-new java-i' />
                         <img src={Block} alt="block" className="block-icon" />
                     </div>
-                    {/* <div className="lock-wrapper">
+                    <div className="lock-wrapper">
                         <img src={JavaScriptClass} alt="javascript-class" className='class-new javascript-i' />
                         <img src={Block} alt="block" className="block-icon" />
-                    </div> */}
-                    <div className="lock-wrapper">
+                    </div>
+                    {/* <div className="lock-wrapper">
                         <img src={IngenieriaClass} alt="ingeniería-class" className='class-new ingenieria-i' />
                         <img src={Diamond} alt="block-diamond" className="block-icon" />
-                    </div>
+                    </div> */}
                     <div className="lock-wrapper">
                         <img src={PythonClass} alt="python-class" className='class-new python-i' />
                         <img src={Block} alt="block-diamond" className="block-icon" />
@@ -88,7 +89,20 @@ function Clases() {
             {modalOpen && (
                 <div className="modal-overlay" onClick={() => setModalOpen(false)}>
                     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                        <p>¡Uy la clase ya acabó!</p>
+                        <p>¡Aprende la forma correcta y profesional de construir software escalable!</p>
+                        <p>¡El precio del Curso es de <span>$40</span> Dólares</p>
+                        <p>¡Para los primeros 5 en apartar su boleto: <span>$30</span> Dólares</p>
+                        <p>El curso tendrá una duración de 5 meses para tu preparación profesional</p><br />
+                        <p>¿Qué te incluye el curso?</p>
+                        <p><span>Incluye un proyecto real con todo lo que aprenderemos para tu portafolio.</span></p>
+                        <p><span>Incluye mentorías individuales en caso de tener dudas o querer apoyo para proyectos individuales.</span></p>
+                        <p><span>Incluye el acceso a las presentaciones y contenidos descargables.</span></p>
+                        <p><span>Reconocimiento permanente en el sitio CodePulse News.</span></p>
+                        <p><span>Admin en todos los grupos de la comunidad y acceso a Host.</span></p>
+                        <p><span>Certificado por nuestra parte CodePulse Community.</span></p>
+                        <p><span>Te incluimos un Curso de Inglés B1 para Desarrolladores realizado por CodePulse.</span></p><br />
+
+                        <h1>Más novedades en próximos días</h1>
                         <button onClick={() => setModalOpen(false)}>Cerrar</button>
                     </div>
                 </div>
