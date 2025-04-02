@@ -1,10 +1,10 @@
 import './Contribuyente.css'
 import Silueta from '../assets/silueta.jpg'
-import Dancar from '../assets/contributors/dancarDev.jpg';
+import Caballero from '../assets/contributors/caballero.jpg';
 
 function Contribuyente() {
 
-    let nameContributor = '¿Qué esperas para serlo?, el mes aún no termina';
+    let nameContributor = 'Isaias Caballero';
 
     return (
         <div>
@@ -15,7 +15,7 @@ function Contribuyente() {
             <h2 className='subtitle-contribuyente'>{ nameContributor }</h2><br />
             <section className='container-contribuyente'>
             <div className="marco">
-                <img src={ Silueta } alt="silueta" className="colaborator" />
+                <img src={ Caballero } alt="silueta" className="colaborator" />
                 {[...Array(15)].map((_, i) => (
                 <span key={i} className="estrellas"></span>
                 ))}
@@ -23,16 +23,21 @@ function Contribuyente() {
             </section><br /><br />
             <article className="features">
                 <div className="caracter">
-                    Destaca tu actividad en la comunidad
+                    Creación de aplicaciones móviles
                 </div>
                 <div className="caracter caract-i">
-                    Resuelve dudas en la comunidad
+                    Obtuvo trabajo haciendo proyectos
                 </div>
                 <div className="caracter">
-                    Comparte recursos tecnológicos
+                    Da los buenos días
                 </div>
                 <div className="caracter">
-                    Se influyente
+                    Es influyente
+                </div>
+            </article><br />
+            <article className="features">
+                <div className="caracter">
+                    Carismático
                 </div>
             </article>
         </div>
