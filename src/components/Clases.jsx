@@ -87,26 +87,46 @@ function Clases() {
                 </div>
             </section>
             {modalOpen && (
-                <div className="modal-overlay" onClick={() => setModalOpen(false)}>
-                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                        <p>¡Aprende la forma correcta y profesional de construir software escalable!</p>
-                        <p>¡El precio del Curso es de <span>$40</span> Dólares</p>
-                        <p>¡Para los primeros 5 en apartar su boleto: <span>$30</span> Dólares</p>
-                        <p>El curso tendrá una duración de 5 meses para tu preparación profesional</p><br />
-                        <p>¿Qué te incluye el curso?</p>
-                        <p><span>Incluye un proyecto real con todo lo que aprenderemos para tu portafolio.</span></p>
-                        <p><span>Incluye mentorías individuales en caso de tener dudas o querer apoyo para proyectos individuales.</span></p>
-                        <p><span>Incluye el acceso a las presentaciones y contenidos descargables.</span></p>
-                        <p><span>Reconocimiento permanente en el sitio CodePulse News.</span></p>
-                        <p><span>Admin en todos los grupos de la comunidad y acceso a Host.</span></p>
-                        <p><span>Certificado por nuestra parte CodePulse Community.</span></p>
-                        <p><span>Te incluimos un Curso de Inglés B1 para Desarrolladores realizado por CodePulse.</span></p><br />
-
-                        <h1>Más novedades en próximos días</h1>
-                        <button onClick={() => setModalOpen(false)}>Cerrar</button>
-                    </div>
+    <div className="modal-overlay" onClick={() => setModalOpen(false)}>
+        <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-content-inner">
+                <h1>¡Aprende la forma profesional de construir software escalable!</h1>
+                <p style={{textAlign: 'center', marginBottom: '0.5rem'}}>Curso de 5 meses para tu preparación profesional</p>
+                
+                <div className="price-section">
+                    <p style={{marginBottom: '0.5rem'}}>Oferta especial (primeros 5):</p>
+                    <div className="price-tag">$30 Dólares</div>
+                    <p style={{marginTop: '0.5rem', fontSize: '0.9rem'}}>Precio regular: $40 Dólares</p>
                 </div>
-            )}
+                
+                <h2 style={{textAlign: 'center', margin: '0.8rem 0 0.5rem'}}>¿Qué incluye el curso?</h2>
+                
+                <div className="features-grid">
+                    {[
+                        "Proyecto real para portafolio",
+                        "Mentorías individuales",
+                        "Materiales descargables",
+                        "Reconocimiento CodePulse",
+                        "Acceso premium",
+                        "Certificado oficial",
+                        "Curso de Inglés B1"
+                    ].map((feature, index) => (
+                        <div key={index} className="feature-item">
+                            <span className="feature-icon">✓</span>
+                            <span>{feature}</span>
+                        </div>
+                    ))}
+                </div>
+                
+                <p className="coming-soon">Más novedades próximamente...</p>
+                
+                <button onClick={() => setModalOpen(false)}>
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
+)}
         </div>
     );
 }
