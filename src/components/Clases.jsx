@@ -107,7 +107,7 @@ function Clases() {
                         "Mentorías individuales",
                         "Materiales descargables",
                         "Reconocimiento CodePulse",
-                        "Acceso premium",
+                        "Admin en todos los grupos",
                         "Certificado oficial",
                         "Curso de Inglés B1"
                     ].map((feature, index) => (

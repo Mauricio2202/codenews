@@ -239,7 +239,7 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 8px;
-    font-weight: 600;
+    font-weight: 600;   
     font-size: 1rem;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
