@@ -104,12 +104,12 @@ function Clases() {
                 <div className="features-grid">
                     {[
                         "Proyecto real para portafolio",
-                        "Mentorías individuales",
+                        "Mentoría individual",
                         "Materiales descargables",
-                        "Reconocimiento CodePulse",
-                        "Admin en todos los grupos",
-                        "Certificado oficial",
-                        "Curso de Inglés B1"
+                        "Reconocimiento en la plataforma CodePulse",
+                        "Admin en el grupo de Desarrollo Web tras aportar recursos",
+                        "Certificado de finalización",
+                        "Archivo de Inglés B1"
                     ].map((feature, index) => (
                         <div key={index} className="feature-item">
                             <span className="feature-icon">✓</span>
