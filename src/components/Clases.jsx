@@ -94,7 +94,7 @@ function Clases() {
                 <p style={{textAlign: 'center', marginBottom: '0.5rem'}}>Curso de 5 meses para tu preparación profesional</p>
                 
                 <div className="price-section">
-                    <p style={{marginBottom: '0.5rem'}}>Oferta especial (primeros 5) Solo quedan 4 cupos:</p>
+                    <p style={{marginBottom: '0.5rem'}}>Oferta especial (primeros 5) Solo quedan 3 cupos:</p>
                     <div className="price-tag">$30 Dólares</div>
                     <p style={{marginTop: '0.5rem', fontSize: '0.9rem'}}>Precio regular: $40 Dólares</p>
                 </div>
