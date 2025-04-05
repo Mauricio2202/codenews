@@ -5,7 +5,7 @@ import PythonClass from '../assets/python-course.png';
 import JavaClass from '../assets/java-course.png';
 import JavaScriptClass from '../assets/javascript-course.png';
 import IngenieriaClass from '../assets/ing-course.png';
-import RedesClass from '../assets/redes-course.png';
+import RedesClass from '../assets/redes-course.jpg';
 import JavaIntroClass from '../assets/javai-course.jpg';
 import NodeClass from '../assets/cnodejs.png';
 import Block from '../assets/block.png';
